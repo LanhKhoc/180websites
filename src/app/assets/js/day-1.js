@@ -1,7 +1,3 @@
-class Day1 {
-
-}
-
-$(() => {
+$(document).ready(() => {
   
 })

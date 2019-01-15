@@ -1,8 +1,10 @@
+const ejs = require('ejs');
+
 const index = (req, res) => {
   const data = {
     title: "Day 2 | 180 Websites | LanhKhoc",
-    css: "day-1/day-1.css",
-    js: "day-1.js",
+    css: "day-2/day-2.css",
+    js: "day-2.js",
   };
 
   ejs.renderFile("src/app/views/day-2.ejs", data, (error, content) => {

@@ -2073,26 +2073,3 @@ a:hover {
 @media (min-width: 1366px) {
   .is-visible-inline-block-xxl-up {
     display: inline-block; } }
-
-.p-header {
-  border-bottom: 1px solid #797e83;
-  padding: 10px 0; }
-
-.p-header__link + .p-header__link {
-  margin-left: 15px; }
-
-.p-welcome__hi-text {
-  color: #ff9933;
-  font-size: 90px;
-  margin-bottom: 0; }
-
-.p-welcome__title {
-  margin: 10px 0;
-  margin-bottom: 40px;
-  font-weight: bolder; }
-
-.p-list-websites {
-  margin-top: 30px; }
-
-.p-list-websites__item {
-  font-size: 1.125rem; }
