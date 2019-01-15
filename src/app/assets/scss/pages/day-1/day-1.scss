@@ -1,0 +1,36 @@
+@import "../../main";
+
+.p-header {
+  border-bottom: 1px solid palette(grey);
+  padding: 10px 0;
+
+  &__link {
+    & + & {
+      margin-left: 15px;
+    }
+  }
+}
+
+
+
+.p-welcome {
+  &__hi-text {
+    color: palette(orange);
+    font-size: 90px;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 10px 0;
+    margin-bottom: 40px;
+    font-weight: bolder;
+  }
+}
+
+.p-list-websites {
+  margin-top: 30px;
+
+  &__item {
+    font-size: rem(18px);
+  }
+}

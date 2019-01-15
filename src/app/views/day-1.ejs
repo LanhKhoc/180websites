@@ -1,0 +1,42 @@
+<%- include('./layouts/head') %>
+
+<div class="p-welcome">
+  <div class="o-grid">
+    <h1 class="p-welcome__hi-text">Hi!</h1>
+    <h2 class="u-color-grey-dark u-mg-0">I'm LanhKhoc and I am making</h2>
+    <h1 class="u-color-orange p-welcome__title">180 websites in 180 days.</h1>
+    <div class="u-underline"></div>
+  </div>
+</div>
+
+<div class="o-grid">
+  <div class="u-text-center">
+    <h3 class="u-color-grey-dark">Today's Website</h3>
+    <h3 class="u-mg-0"><a href=""><%= todayWebsite %></a></h3>
+  </div>
+  <div class="u-underline u-mgt-20"></div>
+</div>
+
+<div class="p-list-websites">
+  <div class="o-grid">
+    <%- 
+      listWebsitesComplete.map((item, index) => {
+        return `
+          <div class="p-list-websites__item u-color-grey-dark">
+            Day ${index + 1}
+            <a href="day-${index+1}" class="u-mgl-10">${item}</a>
+          </div>
+        `
+      }).join("")
+    %>
+
+    <%/* listWebsitesComplete.forEach((item, index) => { %>
+      <div class="p-list-websites__item u-color-grey-dark">
+        Day <% item %>
+        <a href="day-<% index+1 %>" class="u-mgl-10"><%= item %></a>
+      </div>
+    <% }) */%>
+  </div>
+</div>
+
+<%- include('./layouts/foot') %>

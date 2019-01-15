@@ -1,0 +1,23 @@
+{
+  "name": "babel-typescript-sample",
+  "version": "0.7.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "type-check": "tsc",
+    "build": "babel src --out-dir src --extensions \".ts,.tsx\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.32",
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.32",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "@babel/preset-typescript": "^7.0.0-beta.32",
+    "typescript": "~2.7.1"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "nodemon": "^1.17.1"
+  }
+}
